@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input type="number" id="inp">
+<input type="button" value="ClickMe" id="click" onclick="testDoiSo(document.getElementById('inp').value)"></input>
+<p id="test">Hiển thị ở đây</p>
+</body>
+<script>
+
+function testDoiSo(num){
+    num = Number(num) + 1;
+    return document.getElementById('test').innerHTML = num;
+}
+</script>
+</html>

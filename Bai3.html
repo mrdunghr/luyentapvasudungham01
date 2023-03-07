@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+</body>
+<script>
+
+  let inpA = parseInt(prompt(''));
+  let inpB = parseInt(prompt(''));
+  testHamHaiThamSo(inpA, inpB);
+  function testHamHaiThamSo(a, b){
+    let resual = 0;
+    if (Number(a) > Number(b)){
+      return alert(Number(a) + ' Đang lớn hơn ' + Number(b))
+    } else if (Number(a) <= Number(b)){
+      resual = Number(a) + Number(b)
+      return alert('tổng 2 số khi a < b là: ' + resual);
+    }
+    return resual
+  }
+</script>
+</html>

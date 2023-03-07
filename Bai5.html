@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+</body>
+<script>
+    let array = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arrayTow = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let inP = prompt('');
+    nextString(inP)
+
+    function nextString(xString) {
+        let result = '';
+        for (let i = 0; i <= array.length; i++) {
+            if (array[i] == xString) {
+                for (let j = 0; j <= arrayTow.length; j++) {
+                    if (j == i) {
+                        result = arrayTow[j];
+                        return document.write(result + ' là chòm sao');
+                    }
+                }
+            }
+        }
+        return document.write(' không có sao');
+    }
+</script>
+</html>
